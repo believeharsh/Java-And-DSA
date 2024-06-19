@@ -1,6 +1,8 @@
-import java.util.Scanner;
 public class Basics {
    public static void main(String[] args){
+      System.out.println(
+         "This is Basics.java file and it's include varibles and there types"
+      );
 
    }
 }
@@ -39,43 +41,43 @@ public class Basics {
 // int:
 
 // Example:
- int age = 25;
+//  int age = 25;
 // Storage Size: 4 bytes (32 bits)
 
 // float:
 
 // Example:
- float temperature = 98.6f;
+//  float temperature = 98.6f;
 // Storage Size: 4 bytes (32 bits)
 // char:
 
 // Example:
- char grade = 'A';
+//  char grade = 'A';
 // Storage Size: 2 bytes (16 bits)
 // boolean:
 
 // Example:
- boolean isJavaFun = true;
+//  boolean isJavaFun = true;
 // Storage Size: Not precisely defined, typically implementation-dependent.
 
 // double:
 
 // Example:
- double salary = 50000.50;
+//  double salary = 50000.50;
 // Storage Size: 8 bytes (64 bits)
 // byte:
 
 // Example: 
-byte numEmployees = 127;
+// byte numEmployees = 127;
 // Storage Size: 1 byte (8 bits)
 // short:
 
 // Example:
- short distance = 1000;
+//  short distance = 1000
 // Storage Size: 2 bytes (16 bits)
 // long:
 
 // Example:
- long population = 1500000000L;
+//  long population = 1500000000L;
 // Storage Size: 8 bytes (64 bits)
 

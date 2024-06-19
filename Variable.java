@@ -1,5 +1,5 @@
 
-public class Variables {
+public class Variable {
     public static void main(String[] args) {
         String name = "Harsh";
         String name2 = "Dahiya";
