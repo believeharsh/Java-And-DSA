@@ -1,12 +1,7 @@
-package src;
 public class Basics {
-   public static void main(String[] args){
-      System.out.println(
-         "This is Basics.java file and it's include varibles and there types"
-      );
-
-   }
-}
+    public static void main(String[] args) {
+        System.out.println("Harsh Dahiya's java and DSA File : Basics of Java");
+    }
 // sout is the sortcut for writing System.out.println()
 // In programming languages like Java, the key difference between primitive data types and non-primitive (or reference) data types lies in how they store and manage data.
 
@@ -81,4 +76,7 @@ public class Basics {
 // Example:
 //  long population = 1500000000L;
 // Storage Size: 8 bytes (64 bits)
+
+    
+}
 
