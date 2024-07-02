@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Temperature {
     public static void main(String[] args) {
         System.out.println("Calcious to Farenhite Converter **");
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Please Enter temperature in Calcious : ");
         float Tempc = input.nextFloat();
