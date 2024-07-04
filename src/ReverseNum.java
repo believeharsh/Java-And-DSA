@@ -9,6 +9,6 @@ public class ReverseNum {
             n /= 10 ;  // 2345 234 23 2 
             ans = ans * 10 + rem ; // 6 65 654 6543 
         }
-        System.out.println(ans);
+          System.out.println(ans);
     }
 }
