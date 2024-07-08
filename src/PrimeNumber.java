@@ -12,6 +12,20 @@ public class PrimeNumber {
         in.close();
 
     }
+    // Brute Force solution which comes first in mind ...................... 
+
+    // static boolean primecheck(int number) {
+    //     if (number <= 1) {
+    //         return false; // 0, 1, and negative numbers are not prime
+    //     }
+    //     for (int div = 2; div < number; div++) {
+    //         if (number % div == 0) {
+    //             return false; // found a divisor, not prime
+    //         }
+    //     }
+    //     return true; // no divisors found, prime number
+    // }
+
     static boolean primecheck(int number) {
         if (number <= 1) {
             return false; 
