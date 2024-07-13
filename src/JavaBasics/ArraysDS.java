@@ -26,17 +26,17 @@ public class ArraysDS {
 
         // Printing the 2D array
         System.out.println("The 2D array is:");
-        // for(int row = 0; row < arr.length; row++) {
-        //     for(int col = 0; col < arr[row].length; col++) {
-        //         System.out.print(arr[row][col] + " ");
-        //     }
-        //     System.out.println(); // Move to the next line after printing all columns in a row
-        // }
+        for(int row = 0; row < arr.length; row++) {
+            for(int col = 0; col < arr[row].length; col++) {
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println(); // Move to the next line after printing all columns in a row
+        }
 
         // let's print the array by using enhanced for loops
-        // for(int[] a : arr) {
-        //     System.out.println(Arrays.toString(a));
-        // }
+        for(int[] a : arr) {
+            System.out.println(Arrays.toString(a));
+        }
 
         for(int row = 0 ; row < arr.length ; row++) {
             System.out.println(Arrays.toString(arr[row]));
