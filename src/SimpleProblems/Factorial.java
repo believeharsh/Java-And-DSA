@@ -1,3 +1,5 @@
+package SimpleProblems;
+
 public class Factorial {
     public static void main(String[] args) {
        int ans =  getfactorial(3); 

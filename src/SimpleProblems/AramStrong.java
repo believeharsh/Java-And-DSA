@@ -1,3 +1,5 @@
+package SimpleProblems;
+
 public class AramStrong {
     public static void main(String[] args) {
         boolean ans = AramStrongNum(153);

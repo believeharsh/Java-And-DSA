@@ -1,3 +1,5 @@
+package SimpleProblems;
+
 import java.util.Scanner;
 
 public class FiboNum {

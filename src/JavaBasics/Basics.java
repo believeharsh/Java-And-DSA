@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class Basics {
     public static void main(String[] args) {
         System.out.println("Harsh Dahiya's java and DSA File : Basics of Java");

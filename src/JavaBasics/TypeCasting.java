@@ -1,3 +1,5 @@
+package JavaBasics;
+
 public class TypeCasting {
     
 
