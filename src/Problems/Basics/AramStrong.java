@@ -1,4 +1,4 @@
-package SimpleProblems;
+package Problems.Basics;
 
 public class AramStrong {
     public static void main(String[] args) {

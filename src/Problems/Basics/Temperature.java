@@ -1,4 +1,4 @@
-package SimpleProblems;
+package Problems.Basics;
 
 import java.util.Scanner;
 
