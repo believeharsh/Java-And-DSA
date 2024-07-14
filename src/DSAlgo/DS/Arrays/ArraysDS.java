@@ -1,4 +1,4 @@
-package JavaBasics;
+package DSAlgo.DS.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
