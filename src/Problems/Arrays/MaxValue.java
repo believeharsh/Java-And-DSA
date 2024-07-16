@@ -24,14 +24,16 @@ public class MaxValue {
         return tempMax ; 
     }
     static int maxValRange(int[] arr, int start, int end) {
+        if (arr == null || start < 0 || end >= arr.length || start > end) {
+            throw new IllegalArgumentException("Invalid input parameters");
+        }
+    
         int tempMax = arr[start]; 
-        int index = start + 1 ; 
-        for(int i = index ; i <= end ; i++) {
-            if(tempMax < arr[i]){
+        for (int i = start + 1; i <= end; i++) {
+            if (tempMax < arr[i]) {
                 tempMax = arr[i];
             }
-
         }
-        return tempMax ; 
+        return tempMax; 
     }
 }
