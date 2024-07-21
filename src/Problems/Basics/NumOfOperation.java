@@ -16,6 +16,7 @@ public class NumOfOperation {
       
         System.out.println(maxOperations("1001101")); // Should print 4
         System.out.println(maxOperations("00111")); // Should print 0
+        System.out.println(maxOperations("01010100110"));
      
 
     }
