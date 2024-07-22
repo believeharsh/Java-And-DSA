@@ -1,17 +1,15 @@
 package Problems.Basics;
 
-import java.util.Scanner;
+
 
 public class PrimeNumber {
 
     public static void main(String[] args) {
-        System.out.println("Give the Number to check it's prime or not ? ");
-        Scanner in =  new Scanner(System.in);
-        int number = in.nextInt(); 
+       int number = 3 ; 
        boolean ans =  primecheck(number); 
        System.out.println(ans);
 
-        in.close();
+        
 
     }
     // Brute Force solution which comes first in mind ...................... 
@@ -27,8 +25,11 @@ public class PrimeNumber {
     //     }
     //     return true; // no divisors found, prime number
     // }
-
+  
+    // second approach 
     static boolean primecheck(int number) {
+        int sqrt = (int) Math.sqrt(number) ; 
+        System.out.println(sqrt);
         if (number <= 1) {
             return false; 
         }
@@ -40,7 +41,8 @@ public class PrimeNumber {
         }
         
         int count = 3;
-        while (count * count <= number) {
+        while (count * count <= number) { // checking square root 
+            // 2 * 2 = 4 == 2 = squareroot of 4 ; 
             if (number % count == 0) {
                 return false; 
             }
@@ -48,6 +50,17 @@ public class PrimeNumber {
         }
         return true ; 
     }
+
+
+    // static boolean primecheck(int number){
+    //     if(number <= 1){
+    //         return false ; 
+    //     } 
+    //     if(number % 2 == 0){
+    //         return false ; 
+    //     } 
+
+    // }
 }
 
 
