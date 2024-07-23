@@ -62,7 +62,7 @@ public class FindValidMatrix {
         int i = rows - 1 ; 
         int j = cols - 1 ; 
         while (i >= 0 && j >= 0) {
-            int min = rowsum[i] ; 
+       
             if(rowsum[i] <= colsum[j]){
                 res[i][j] = rowsum[i] ; 
      

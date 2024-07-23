@@ -1,6 +1,8 @@
 package DSAlgo.Algo.BinarySearch;
 
 public class RecursiveBinary {
+    // Iterative Approach: Generally preferred in practice for binary search due to its constant space complexity and avoidance of stack overflow issues.
+    // Recursive Approach: Can be used when clarity and brevity of code are prioritized, and when the array size is small enough that stack overflow is not a concern.
     public static void main(String[] args) {
         // RecursiveBinary search = new RecursiveBinary();
         int[] array = { 1, 3, 5, 7, 9, 11, 13, 15 };
