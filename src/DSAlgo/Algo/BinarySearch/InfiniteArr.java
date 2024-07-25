@@ -12,24 +12,35 @@ public class InfiniteArr {
             71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 
             81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 
             91, 92, 93, 94, 95, 96, 97, 98, 99, 100 };
-        int target = 93;
-        System.out.println(ans(arr, target));
+        int target = 30;
+        System.out.println(getAns(arr, target));
 
     }
 
-    static int ans(int[] arr, int target) {
-        int start = 0;
-        int end = 1;
+    // static int ans(int[] arr, int target) {
+    //     int start = 0;
+    //     int end = 1;
 
-        if(target == arr[start]){
-            return start ; 
+    //     if(target == arr[start]){
+    //         return start ; 
+    //     }
+    //     while (target > arr[end]) {
+    //         int newStart = end + 1;
+    //         end = end + (end - start + 1) * 2;
+    //         start = newStart;
+    //     }
+    //     return binarySearch(arr, target, start, end);
+    // }
+
+    static int getAns(int[] arr , int target){
+        int low = 0 ; 
+        int high = 1 ; 
+
+        while(target > arr[high]){
+            low = high + 1 ; 
+            high = high * 2 ; 
         }
-        while (target > arr[end]) {
-            int newStart = end + 1;
-            end = end + (end - start + 1) * 2;
-            start = newStart;
-        }
-        return binarySearch(arr, target, start, end);
+        return binarySearch(arr, target, low, high) ; 
     }
      // this function will get the actual start and end index where element actually lies : 
     static int binarySearch(int[] arr, int target, int start, int end) {
