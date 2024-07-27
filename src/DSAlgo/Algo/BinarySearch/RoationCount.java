@@ -4,23 +4,31 @@ public class RoationCount {
 
     public static void main(String[] args) {
         // int[] arr = {4, 5, 6, 7, 0, 1, 2, 3};
-        int[] arr = {14, 15, 16, 17, 10 , 11, 12, 13};
+        // int[] arr = {4,5,6,7,0,1,2};
+        int[] arr = {11,13,15,17};
         int  ans = pivot(arr) ; 
-        System.out.println("This is pivot index " + ans);
+        System.out.println("array has been roated " + ans + " times ");
+
+        // Index of the smallest interger of the array is equal to the pivot index and also the roatation count 
+        // of an array as well 
         
     }
-    static  int pivot(int[] arr){
-        int start = 0 ; 
-        int end = arr.length - 1 ; 
-        while(start < end){
-            int mid = start + (end - start) / 2 ; 
-            if(arr[mid] >= arr[0]){
-                start = mid + 1 ; 
+    static  int pivot(int[] nums){
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            if (nums[left] < nums[right]) {
+                return nums[left];
             }
-            else{
-                end = mid ; 
+            int mid = left + (right - left) / 2;
+            if (nums[mid] >= nums[left]) {
+                left = mid + 1;
+            } else {
+                right = mid;
             }
         }
-        return start ; 
+
+        return nums[left]; 
     }
 }
