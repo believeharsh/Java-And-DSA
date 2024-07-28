@@ -3,22 +3,45 @@ package DSAlgo.Algo.BinarySearch;
 public class RoationCount {
 
     public static void main(String[] args) {
-        // int[] arr = {4, 5, 6, 7, 0, 1, 2, 3};
-        // int[] arr = {4,5,6,7,0,1,2};
-        int[] arr = {11,13,15,17};
-        int  ans = pivot(arr) ; 
-        System.out.println("array has been roated " + ans + " times ");
+        // Test cases
+        int[][] testCases = {
+                { 4, 5, 6, 7, 0, 1, 2 }, // Simple Rotated Array
+                { 1, 2, 3, 4, 5, 6, 7 }, // Fully Rotated Array
+                { 1 }, // Single Element Array
+                { 2, 1 }, // Two Elements Array
+                { 2, 2, 2, 0, 1 }, // Array with Duplicates
+                { 1, 2, 3, 4, 5 } // Non-Rotated Array
+        };
 
-        // Index of the smallest interger of the array is equal to the pivot index and also the roatation count 
-        // of an array as well 
-        
+        // Expected results
+        int[] expectedResults = {
+                0, // Simple Rotated Array
+                1, // Fully Rotated Array
+                1, // Single Element Array
+                1, // Two Elements Array
+                0, // Array with Duplicates
+                1 // Non-Rotated Array
+        };
+
+        // Run test cases
+        for (int i = 0; i < testCases.length; i++) {
+            int result = pivot(testCases[i]);
+            System.out.println("Test case " + (i + 1) + ": Expected = " + expectedResults[i] + ", Got = " + result);
+        }
     }
-    static  int pivot(int[] nums){
+
+    // Index of the smallest interger of the array is equal to the pivot index and
+    // also the roatation count
+    // of an array as well
+
+    
+
+    static int pivot(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
 
         while (left < right) {
-            if (nums[left] < nums[right]) {
+            if (nums[left] <= nums[right]) {
                 return nums[left];
             }
             int mid = left + (right - left) / 2;
@@ -29,6 +52,6 @@ public class RoationCount {
             }
         }
 
-        return nums[left]; 
+        return nums[left];
     }
 }
