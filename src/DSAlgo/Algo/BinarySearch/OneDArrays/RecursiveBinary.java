@@ -1,4 +1,4 @@
-package DSAlgo.Algo.BinarySearch;
+package DSAlgo.Algo.BinarySearch.OneDArrays;
 
 public class RecursiveBinary {
     // Iterative Approach: Generally preferred in practice for binary search due to its constant space complexity and avoidance of stack overflow issues.

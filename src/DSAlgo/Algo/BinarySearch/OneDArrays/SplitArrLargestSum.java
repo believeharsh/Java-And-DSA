@@ -1,4 +1,4 @@
-package DSAlgo.Algo.BinarySearch;
+package DSAlgo.Algo.BinarySearch.OneDArrays;
 
 // problem link : 
 // https://leetcode.com/problems/split-array-largest-sum/ 

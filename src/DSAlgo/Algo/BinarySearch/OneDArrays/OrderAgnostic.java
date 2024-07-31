@@ -1,4 +1,4 @@
-package DSAlgo.Algo.BinarySearch;
+package DSAlgo.Algo.BinarySearch.OneDArrays;
 
 public class OrderAgnostic {
     // Here we are using  order-agnostic binary search algorithm 

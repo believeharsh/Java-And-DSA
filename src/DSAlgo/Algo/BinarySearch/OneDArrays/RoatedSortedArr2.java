@@ -1,4 +1,4 @@
-package DSAlgo.Algo.BinarySearch;
+package DSAlgo.Algo.BinarySearch.OneDArrays;
 
 public class RoatedSortedArr2 {
     public static void main(String[] args) {
