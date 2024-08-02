@@ -1,8 +1,13 @@
 package DSAlgo.Algo.BinarySearch.OneDArrays;
 
+// problem link :: https://www.naukri.com/code360/problems/find-peak-element_1081482?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries&count=25&page=1&search=&sort_entity=order&sort_order=ASC
+
+// Note : when problem says that it is the mountain array then it strictly says then there will only one peak in the array but if it doesn't stated then again same code will be work; 
+
 public class PeakMoutainArr {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 4, 5, 10, 4, 3, 2, 1} ; 
+        // int[] arr = {2, 3, 4, 5, 10, 4, 3, 2, 1} ; 
+        int[] arr = {2, 3, 1, 2, 3, 5 ,3 , 6, 7, 8, 9, 7} ; 
         int index = peakValue(arr) ; 
         int value = arr[index] ; 
         System.out.println("Peak Value is " + value + " at index " + index); // this should print value 10 index 4 
