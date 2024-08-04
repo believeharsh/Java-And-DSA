@@ -1,5 +1,4 @@
 package DSAlgo.Algo.Sorting.SelectionSort;
-
 import java.util.Arrays;
 
 // Example of Selection sort  : 
@@ -7,6 +6,7 @@ import java.util.Arrays;
 // Selection Sort : first of all we assume that the first element is the smallest element of the array  then we compare this element with the rest of the elements of an array. If we found the any other smallest number then will swap it with the first element of the array. we'll run this process until the array is sorted. 
 
 public class Selection {
+    // since we are comaparing and swapping in each time in remaining unsorted part of the array so it will work on the arrays that contains duplicate integers. 
     public static void main(String[] args) {
         int[] arr = { 4, 3, 2, 0, 1, 12, 9, 3, 0};
         selectionSort(arr);
