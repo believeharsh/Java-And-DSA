@@ -34,7 +34,7 @@ public class Checkalgo {
                 nums[high] = nums[mid];
                 nums[mid] = temp;
                 high--;
-                // mid++;
+               
             }
         }
     }
