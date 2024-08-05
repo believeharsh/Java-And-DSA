@@ -5,12 +5,17 @@ import java.util.Arrays;
 public class Sorting {
     public static void main(String[] args) {
         int[] arr = { 0, 3, 5, 7, 9, 10, 12 };
-        // let's check the bubble sort function here : 
+        // int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        // let's check the bubble sort function here :
         // Bubble(arr);
         // System.out.println(Arrays.toString(arr));
 
-        // let's check the Selection sort function here : 
-        selectionSort(arr);
+        // let's check the Selection sort function here :
+        // selectionSort(arr);
+        // System.out.println(Arrays.toString(arr));
+
+        // let's check the Insertin sort function here :
+        insertionSort(arr);
         System.out.println(Arrays.toString(arr));
 
     };
@@ -34,24 +39,46 @@ public class Sorting {
     };
 
     public static void selectionSort(int[] arr) {
-        int n = arr.length ; 
-        boolean swapped ; 
-        
-        for(int i = 0 ; i < n - 1 ; i++) {
-            int minInd = i ; 
-            swapped = false ; 
-            for(int j = i + 1 ; j < n ; j++){
-                if(arr[j] < arr[j-1]){
-                    arr[i] = j ; 
-                  
-                };
+        int n = arr.length;
+        boolean swapped;
+
+        for (int i = 0; i < n - 1; i++) {
+            int minInd = i;
+            swapped = false;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[j - 1]) {
+                    arr[i] = j;
+
+                }
+                ;
                 SwapValues(arr, i, minInd);
-                swapped = true ;
-                if(!swapped){
-                    break ; 
+                swapped = true;
+                if (!swapped) {
+                    break;
                 }
             }
 
+        }
+    };
+
+    public static void insertionSort(int[] arr) {
+        int n = arr.length;
+        boolean swapped;
+        for (int i = 1; i < n; i++) {
+            swapped = false;
+            for (int j = i; j > 0; j--) {
+                if (arr[j] < arr[j - 1]) {
+                    SwapValues(arr, j, j - 1);
+                    swapped = true;
+
+                }
+                if (!swapped) {
+                    break;
+                } else {
+                    break;
+                }
+
+            }
         }
     }
 
