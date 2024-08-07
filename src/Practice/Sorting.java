@@ -65,6 +65,7 @@ public class Sorting {
         }
     };
 
+    @SuppressWarnings("unused")
     public static void insertionSort(int[] arr) {
         int n = arr.length;
         boolean swapped;
