@@ -22,6 +22,8 @@ public class FindAllDuplicateNumbers {
                     swap(arr, i, rightInd);
                 } else {
                     break; // break the loop if we find a duplicate
+                    // here we can also write crntInd++.
+                    // Note : when inner loops breaks then outer loop automatically goes to the next iteration by incrementing crntind
                 }
             }
         }
