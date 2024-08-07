@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Sorting {
     public static void main(String[] args) {
-        int[] arr = { 0, 3, 5, 7, 9, 10, 12 };
+        int[] arr = {6, 5, 3, 3, 1, 2 };  // should print {1,2,3, 3, 5, 6} 
         // int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         // let's check the bubble sort function here :
         // Bubble(arr);
@@ -15,7 +15,11 @@ public class Sorting {
         // System.out.println(Arrays.toString(arr));
 
         // let's check the Insertin sort function here :
-        insertionSort(arr);
+        // insertionSort(arr);
+        // System.out.println(Arrays.toString(arr));
+
+        // let's check the Cyclic sort function here :
+        cycleSort(arr);
         System.out.println(Arrays.toString(arr));
 
     };
@@ -80,6 +84,24 @@ public class Sorting {
 
             }
         }
+    };
+
+    public static void cycleSort(int[] arr){
+        int n = arr.length ; 
+        int crntInd = 0 ; 
+        while(crntInd < n) {
+            int rightInd = arr[crntInd] - 1 ; 
+            // since we are sorting the array that ranges from 1 to N : 
+            // Note that this function will work if all the values will be available in the unsorted arrays from range 1 to N 
+            if(arr[crntInd] < n && arr[crntInd] != arr[rightInd] && arr[crntInd] > 0 ){
+                SwapValues(arr, crntInd, rightInd);
+            }
+           
+            else{
+                crntInd++ ; 
+            }
+        };
+
     }
 
     public static void SwapValues(int[] arr, int first, int second) {

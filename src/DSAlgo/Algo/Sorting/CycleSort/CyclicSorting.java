@@ -2,13 +2,15 @@ package DSAlgo.Algo.Sorting.CycleSort ;
 import java.util.Arrays;
 public class CyclicSorting {
     public static void main(String[] args) {
-        int[] arr = {1, 4, 3, 2,5};
+        int[] arr = {6, 5, 3, 3, 1, 2 };
+       
        
         cyclicSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
     public static void cyclicSort(int[] arr) {
+        // this function will work for the arrays ranges from 1 to N : 
         int n = arr.length;
         int crntInd = 0;
 
