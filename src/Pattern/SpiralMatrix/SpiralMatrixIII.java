@@ -2,8 +2,8 @@ package Pattern.SpiralMatrix;
 import java.util.Arrays;
 public class SpiralMatrixIII {
     public static void main(String[] args) {
-        int[][] result = spiralMatrixIII(2, 3, 0, 0);
-        System.out.println(Arrays.toString(result));
+        int[][] result = spiralMatrixIII(2, 3, 0, 1);
+        System.out.println(Arrays.deepToString(result));
     }
 
     public static int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
