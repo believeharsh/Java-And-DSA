@@ -1,4 +1,4 @@
-package Pattern.SpiralMatrix;
+package ProblemsPattern.SpiralMatrix;
 import java.util.Arrays;
 public class SpiralMatrixIII {
     public static void main(String[] args) {

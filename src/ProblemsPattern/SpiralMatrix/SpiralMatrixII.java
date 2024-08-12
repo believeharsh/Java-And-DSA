@@ -1,4 +1,4 @@
-package Pattern.SpiralMatrix;
+package ProblemsPattern.SpiralMatrix;
 
 import java.util.Arrays;
 // Problem link : https://leetcode.com/problems/spiral-matrix-ii/
