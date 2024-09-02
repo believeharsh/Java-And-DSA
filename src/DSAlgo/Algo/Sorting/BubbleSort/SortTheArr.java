@@ -1,6 +1,7 @@
 package DSAlgo.Algo.Sorting.BubbleSort;
 
 // problem link : https://leetcode.com/problems/sort-colors/ 
+// Here we are using the Bubble sort technique. 
 import java.util.Arrays;
 
 public class SortTheArr {

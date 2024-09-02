@@ -6,8 +6,9 @@ public class CyclicSorting {
         int[] arr2 = {6, 5, 3, 3, 1, 0, 2 };
        
        
-        // cyclicSort(arr);j
+        cyclicSort(arr);
         cyclicSort2(arr2);
+        System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(arr2));
     }
 
