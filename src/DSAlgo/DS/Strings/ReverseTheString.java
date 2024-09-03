@@ -4,11 +4,14 @@ package DSAlgo.DS.Strings;
 public class ReverseTheString {
     public static void main(String[] args) {
         String s = " hello world " ; 
-        // String ans = func(s) ; 
-        // System.out.println( "s" + ans + "s");
+        // String[] ans = s.trim().split("//s+");  
+        //  for(int i = 0; i< ans.length ; i++){
+        //     System.out.println(ans[i]);
 
-        String ans = s.substring(6, 11) ; 
-        System.out.println(ans);
+        //  }
+
+        // String ans = s.substring(6, 11) ; 
+        // System.out.println(ans);
     
     }
 
