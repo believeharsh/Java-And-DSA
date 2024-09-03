@@ -1,10 +1,14 @@
 package DSAlgo.DS.Strings;
+// Problem link : https://leetcode.com/problems/reverse-words-in-a-string/
 
 public class ReverseTheString {
     public static void main(String[] args) {
         String s = " hello world " ; 
-        String ans = func(s) ; 
-        System.out.println( "s" + ans + "s");
+        // String ans = func(s) ; 
+        // System.out.println( "s" + ans + "s");
+
+        String ans = s.substring(6, 11) ; 
+        System.out.println(ans);
     
     }
 
@@ -16,7 +20,7 @@ public class ReverseTheString {
             // Skip spaces
             while (i >= 0 && s.charAt(i) == ' ') {
                 i--;
-            }
+            } // this loop will work till it find the first charcter ; 
 
             if (i < 0) break;
 
@@ -25,14 +29,15 @@ public class ReverseTheString {
 
             while (i >= 0 && s.charAt(i) != ' ') {
                 i--;
-            }
+            } // this loop will work till it find the first empty space ; 
 
             // Extract the word and add it to the answer
             if (ans.length() > 0) {
                 ans.append(" ");
             }
             ans.append(s.substring(i + 1 , j + 1 ));
-            System.out.println(ans); 
+             // here we are using j+1 beacuse in java substring method exclude the second arugument value and give the result the value till next before the second arg value; 
+            
         
            
         }
