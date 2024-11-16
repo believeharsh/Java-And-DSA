@@ -3,7 +3,7 @@ package DSAlgo.DS.Strings;
 
 public class ReverseTheString {
     public static void main(String[] args) {
-        String s = " hello world " ; 
+        // String s = " hello world " ; 
         // String[] ans = s.trim().split("//s+");  
         //  for(int i = 0; i< ans.length ; i++){
         //     System.out.println(ans[i]);

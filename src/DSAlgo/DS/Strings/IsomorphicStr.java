@@ -2,6 +2,8 @@ package DSAlgo.DS.Strings;
 
 // problem Link : https://leetcode.com/problems/isomorphic-strings/ ; 
 public class IsomorphicStr {
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public static void main(String[] args) {
         boolean ans = Isisomirphic("paper", "title") ; 
         System.out.println(ans);
