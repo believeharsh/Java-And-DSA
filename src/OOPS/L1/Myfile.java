@@ -22,10 +22,11 @@ public class Myfile {
         System.out.println(second.name) ; // Here first and second are both pointing to the same object so since we've changed the first name second will give the same result as first because both are pointing to the same objects. 
 
 
-
+        // Here I've used this one to understand  the final keyword with primitive and objects. so when final is added with any primitive then we can't change it's value but if any object has final then we can change the value of object but can't reassign to that object. 
         final A one = new A("Harsh Dahiya") ;
         one.name = "Vaibhav Paraserf" ; 
-        one = new A("Hello") ; 
+        // one = new A("Hello") ; 
+        
       
     }
     
