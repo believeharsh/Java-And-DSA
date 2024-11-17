@@ -3,8 +3,8 @@ package OOPS.L1;
 public class Myfile {
     public static void main(String[] args) {
         // Student[] students = new Student[5];
-        Student Harsh = new Student(11, "Harsh Dahiya", 90.4f);
-        Student Rahul = new Student(18, "Rahul Gehlot", 90.3f);
+        // Student Harsh = new Student(11, "Harsh Dahiya", 90.4f);
+        // Student Rahul = new Student(18, "Rahul Gehlot", 90.3f);
 
         // System.out.println(Harsh.rno);
         // System.out.println(Harsh.name);
