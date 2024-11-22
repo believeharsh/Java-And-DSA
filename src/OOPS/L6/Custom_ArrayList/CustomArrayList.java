@@ -73,3 +73,9 @@ public class CustomArrayList {
         System.out.println(list);
     }
 }
+
+// But what is the problem with custom Arraylist?
+// With Custom Arraylist, we can only use that code for one particular type but what if we hace to use that 
+// CustomArryList for differnt type then we can not do that
+
+// for that we have to define the cutomArrayList with distinct types which will lead to duplicate code a lot
