@@ -1,4 +1,4 @@
-package DSAlgo.Algo.BinarySearch.OneDArrays;
+package DSAlgo.Algo.BinarySearch.OneDArrays ; 
 
 import java.util.ArrayList;
 import java.util.Arrays;
