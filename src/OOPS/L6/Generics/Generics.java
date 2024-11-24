@@ -1,6 +1,7 @@
 package OOPS.L6.Generics;
 // What is the Generics ?
-// 
+// Generics are a feature in Java that lets you define a class, method, or interface with a placeholder for types, which gets replaced with specific types when used.
+
 public class Generics {
 
     public static class Box<T> { // `T` is the type placeholder
