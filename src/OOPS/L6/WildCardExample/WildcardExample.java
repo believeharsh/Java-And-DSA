@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class WildcardExample<T extends Number> {
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
