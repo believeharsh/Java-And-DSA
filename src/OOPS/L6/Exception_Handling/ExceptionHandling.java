@@ -1,7 +1,5 @@
 package OOPS.L6.Exception_Handling;
 
-import java.security.Key;
-
 public class ExceptionHandling {
 
     // What is Exception Handling in Java?
