@@ -59,8 +59,11 @@ public class LamdaExpression {
 
 
         // Why Not Write Code Directly Without Lambdas?
+
         // Less Readable: Writing verbose anonymous classes clutters code, especially when implementing simple behaviors.
+
         // Harder to Maintain: Lambdas make code easier to follow since they reduce the overhead of unnecessary syntax.
+        
         // Boilerplate Reduction: Lambdas remove repetitive code patterns, making programs more concise. 
 
 

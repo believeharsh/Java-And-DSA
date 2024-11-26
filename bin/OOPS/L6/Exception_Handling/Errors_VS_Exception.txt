@@ -1,0 +1,29 @@
+The key difference between Errors and Exceptions in Java lies in their nature and how they are handled. Here's a concise and interview-ready explanation:
+
+Errors:
+Definition: Errors represent serious issues that occur in the runtime environment and are beyond the control of the application.
+
+Examples: OutOfMemoryError, StackOverflowError, VirtualMachineError.
+
+Cause: Typically caused by resource constraints or system-level failures.
+
+Recovery: Errors are usually not recoverable, and the application often needs to terminate.
+
+Handling: Errors are unchecked and do not need to be handled explicitly in the code.
+
+Hierarchy: They are a part of the java.lang.Error class, which extends java.lang.Throwable.
+
+Exceptions:
+Definition: Exceptions represent conditions that a program can handle and recover from.
+
+Examples: FileNotFoundException, NullPointerException, ArithmeticException.
+
+Cause: Typically caused by logical issues in the program, invalid user input, or external issues like file absence or network failures.
+
+Recovery: Exceptions are often recoverable, and proper handling can allow the program to continue running.
+
+Handling: Exceptions must be explicitly handled using try-catch or propagated using throws.
+
+Hierarchy: They are a part of the java.lang.Exception class, which also extends java.lang.Throwable.
+
+
