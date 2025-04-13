@@ -7,10 +7,6 @@ public class Basics {
 // sout is the sortcut for writing System.out.println()
 // In programming languages like Java, the key difference between primitive data types and non-primitive (or reference) data types lies in how they store and manage data.
 
-
-
-// In programming languages like Java, the key difference between primitive data types and non-primitive (or reference) data types lies in how they store and manage data.
-
 // Primitive Data Types:
 
 // These are basic data types that are directly supported by the programming language.
