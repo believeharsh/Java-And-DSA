@@ -56,7 +56,7 @@ public class JavaCollection {
 
 // 🧠 When to use what?
 
-// Interface/Class	                           Use Case
+// Interface/Class	                         Use Case
 
 // ArrayList	                  Fast random access, dynamic array
 // LinkedList	                    Fast insert/delete from ends
@@ -65,6 +65,6 @@ public class JavaCollection {
 // HashMap	                   Key-value pairs, fast access via key
 // TreeMap	                         Sorted key-value pairs
 // Stack	                            LIFO operations
-// Queue / Deque	FIFO / double-ended queue
+// Queue / Deque	                 FIFO / double-ended queue
     }
 }
