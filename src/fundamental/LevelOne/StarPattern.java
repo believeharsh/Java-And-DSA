@@ -20,7 +20,18 @@ public class StarPattern {
 
         // FloyedTriangle(7) ; 
 
-        ZeroOneTriangle(7) ; 
+        // ZeroOneTriangle(7) ; 
+
+        // ButterflyPattern(5) ; 
+
+        // Rohumbuspattern(5) ; 
+        
+        // NumberPyramidPattern(5) ; 
+
+        // PalindromeNumberPattern(9) ; 
+
+        DimondPattern(15) ; 
+        
     }
 
     static void SolidRectangle(int height, int NumberOfStars) {
@@ -135,6 +146,118 @@ public class StarPattern {
                     System.out.print(0);
                 }
             }
+            System.out.println();
+        }
+    }
+
+    static void ButterflyPattern(int n) {
+        // first half 
+        for(int i = 1 ; i<=n ; i++) {
+            for(int j = 1 ; j <= i ; j++) {
+                System.out.print("*") ; 
+            }
+
+            // spaces 
+
+            for(int j = 1 ; j <= 2 * (n - i) ; j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ; j <= i ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // second half 
+        for(int i = n ; i >= 1 ; i--) {
+            for(int j = 1 ; j <= i ; j++) {
+                System.out.print("*") ; 
+            }
+
+            // spaces 
+
+            for(int j = 1 ; j <= 2 * (n - i) ; j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ; j <= i ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void Rohumbuspattern(int n) {
+        for(int i = 1 ; i <= n ; i++) {
+            for(int j = 1 ; j <= n - i ; j++){
+                System.out.print(" ") ; 
+            }
+            for(int j = 1 ; j <= n ; j++){
+                System.out.print("*") ; 
+            }
+            System.out.println();
+        }
+    }
+
+
+    static void HollowRohumbusPattern(int n) {
+
+    }
+
+    static void NumberPyramidPattern(int n ) {
+        for(int i = 1 ; i <= n ; i++) {
+            for(int j = 1 ; j <= n - i ; j++) {
+                System.out.print(" ");
+            }
+            for(int j = 1 ; j <= i ; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void PalindromeNumberPattern(int n ) {
+        for(int i = 1 ; i <= n ; i++) {
+            for(int j = 1 ; j <= n - i ; j++){
+                System.out.print(" ");
+            }
+
+            // first half 
+            for(int j = i ; j >= 1 ; j--){
+                System.out.print(j);
+            }
+            
+            // second half 
+            for(int j = 2 ; j <= i ; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
+    static void DimondPattern(int n ) {
+        for (int i = 1 ; i <=n  ; i++){
+
+            for(int j = 1 ; j<= n - i ; j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ; j <= (2 * i - 1) ; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+        for (int i = n ; i >= 1 ; i--){
+
+            for(int j = 1 ; j<= n - i ; j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ; j <= (2 * i - 1) ; j++) {
+                System.out.print("*");
+            }
+
             System.out.println();
         }
     }
