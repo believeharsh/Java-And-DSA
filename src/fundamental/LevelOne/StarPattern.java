@@ -30,7 +30,9 @@ public class StarPattern {
 
         // PalindromeNumberPattern(9) ; 
 
-        DimondPattern(15) ; 
+        // DimondPattern(15) ; 
+
+        HollowRohumbusPattern(7) ; 
         
     }
 
@@ -199,11 +201,26 @@ public class StarPattern {
         }
     }
 
-
     static void HollowRohumbusPattern(int n) {
-
+        for (int i = 1; i <= n; i++) {
+            // Print leading spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+    
+            // Print hollow structure
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+    
+            System.out.println();
+        }
     }
-
+    
     static void NumberPyramidPattern(int n ) {
         for(int i = 1 ; i <= n ; i++) {
             for(int j = 1 ; j <= n - i ; j++) {
