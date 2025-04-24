@@ -4,7 +4,9 @@ public class GCDOfNumbers {
     public static void main(String[] args) {
         
         GetGCD(48, 18); 
-        GetGCD(50, 10); 
+        gcd(48, 18 ) ; 
+        gcdRec(48, 18) ; 
+        // GetGCD(50, 10); 
 
     }
     // this is the brute force apporoach 
@@ -22,4 +24,33 @@ public class GCDOfNumbers {
         }
         System.out.println("GCD of the Given Numbers is  : " + 1);
     }
+
+    static int gcd(int a, int b) { // this is the Euclides GCD method 
+        while(b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        System.out.println("GCD of the given numbers is : " + a);
+        return a ; 
+    }
+
+    // static int gcdRec(int a, int b) {
+    //     if (b == 0) {
+    //         System.out.println("GCD of the given numbers is : " + a);
+    //         return a;
+    //     }
+    //     return gcd(b, a % b);
+    // }
+
+    // doesn't matter you can choose any number to be a GCd right ; 
+    static int gcdRec(int a, int b) {
+        if (a == 0) {
+            System.out.println("GCD of the given numbers is : " + a);
+            return b;
+        }
+        return gcd(a, b % a);
+    }
+
 }
+    

@@ -24,7 +24,7 @@ public class LCMOfNumbers {
 
     // optimized method 
 
-    static int gcd(int a, int b) { // this is the Euclidean GCD method 
+    static int gcd(int a, int b) { // this is the Euclides GCD method 
         while(b != 0) {
             int temp = b;
             b = a % b;
