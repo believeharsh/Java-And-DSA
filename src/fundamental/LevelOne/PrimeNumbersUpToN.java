@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class PrimeNumbersUpToN {
     public static void main(String[] args) {
-        int n = 50; // You can change this value
+        int n = 100; // You can change this value
         sieveOfEratosthenes(n);
     }
 
@@ -33,7 +33,9 @@ public class PrimeNumbersUpToN {
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) {
                 System.out.print(i + " ");
+                System.out.println();
             }
         }
+        System.out.println("Total Prime Numbers up to n is " + isPrime.length);
     }
 }
