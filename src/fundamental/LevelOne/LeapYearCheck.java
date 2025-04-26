@@ -10,6 +10,6 @@ public class LeapYearCheck {
 
     static boolean check(int year) {
         System.out.print("This Year is the leap Year  : ");
-        return ( + year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 );
+        return ( year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 );
     }
 }
