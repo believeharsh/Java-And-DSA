@@ -1,5 +1,8 @@
 package DSAlgo.Algo.LinearSearch;
 
+// Question:
+// "Given an array, a target value, and a range (start and end index), search for the target only within the specified range and return its index. If the target is not found, return -1."
+
 public class SearchInRange {
     public static void main(String[] args) {
         int[] arr = {12, 13, 14, 15, 16, 17} ; 

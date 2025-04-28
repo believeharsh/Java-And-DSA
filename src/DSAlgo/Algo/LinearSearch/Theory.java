@@ -16,6 +16,13 @@
     // SC : O(1) - constant amount of extra space used. 
     // Data Structure : - Applicable to any array or list, whether sorted or unsorted. 
 
+
+// ✅ When to Use Linear Search?
+    // Small datasets.
+    // Data is unsorted.
+
+// Quick and simple search is needed without preprocessing.
+
 // Advantages : 1. Simple and easy to implement. 
             //  2. Works on both sorted or unsorted 
             

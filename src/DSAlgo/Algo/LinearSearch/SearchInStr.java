@@ -1,6 +1,11 @@
 package DSAlgo.Algo.LinearSearch;
 import java.util.Arrays;
 
+
+
+// Question:
+// "Given a string and a character, determine if the character exists in the string."
+
 public class SearchInStr {
     public static void main(String[] args) {
         String name = "HarshDahiya" ; 

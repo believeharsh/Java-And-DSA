@@ -1,6 +1,12 @@
 package DSAlgo.Algo.LinearSearch;
 
-public class Basic {
+// Question:
+// "Given an array of integers and a target value, perform the following operations:
+// (1) Search for the target and return its index if found, else return -1.
+// (2) Search for the target and return the element itself if found, else return Integer.MAX_VALUE.
+// (3) Search for the target and return true if it is present, otherwise return false."
+
+public class LinearSearchBasic {
     public static void main(String[] args) {
         int[] arr = { 10, 29, 48, 56, 12, 42 };
         System.out.println("Target is availabel at the " + linearsearch(arr, 42) + " index");
