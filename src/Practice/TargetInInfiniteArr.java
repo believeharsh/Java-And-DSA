@@ -2,8 +2,8 @@ package Practice;
 
 public class TargetInInfiniteArr {
     public static void main(String[] args) {
-        int[] nums = { 2, 4, 6, 8, 10, 13, 15, 18, 20, 22, 25, 30 }; // sorted array
-        int target = 18;
+        int[] nums = { 2, 4, 6, 8, 10, 13, 15, 18, 20, 22, 25, 30, 32, 35}; // sorted array
+        int target = 35;
         int ans = searchInInfiniteArr(nums, target);
         System.out.println(ans);
     }
@@ -13,8 +13,9 @@ public class TargetInInfiniteArr {
         int end = 1;
 
         while (target > arr[end]) {
-            start = end + 1;
-            end *= 2;
+            int temp = end + 1 ; 
+            end = end + (end - start + 1) * 2 ; 
+            start = temp ; 
         } // here we are taking the window size 2 and checking, if answer lies in the
           // window then loop will break and binary search will be applied, otherwise
           // window will get's double each time.
