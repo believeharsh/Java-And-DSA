@@ -28,8 +28,6 @@ public class FloorOfNum {
                 return mid;
             }
         }
-        
-
         // At this point, end is pointing to the largest element <= target
         return end;
     }
