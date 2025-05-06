@@ -23,7 +23,7 @@ public class Selection {
                 if (arr[j] < arr[minInd]) {
                     minInd = j;
                 }
-            };
+            }
             // here we are swapping the smallest element with the first element of the unsorted part . 
             int temp = arr[minInd];
             arr[minInd] = arr[i];
