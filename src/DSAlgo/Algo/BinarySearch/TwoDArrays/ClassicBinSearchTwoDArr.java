@@ -43,4 +43,15 @@ public class ClassicBinSearchTwoDArr {
 
         return false;
     }
+
+    static boolean searchMatrixApproachB(int[][] matrix, int target) {
+        int rows = matrix.length ; 
+        int cols = matrix[0].length ; 
+
+        if(rows == 1 ) {
+            
+        }
+    }
+
+
 }
