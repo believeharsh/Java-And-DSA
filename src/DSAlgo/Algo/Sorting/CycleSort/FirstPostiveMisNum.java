@@ -5,6 +5,7 @@ public class FirstPostiveMisNum {
     // As the Question ask that give the smallest positive integer so we know that
     // this value can be from 1 to n. so that we'll sort the array from 1 to n range
     // as well.
+    
     public static void main(String[] args) {
         int[] arr = { 1, 2, 0 }; // missing number is = 3
         int[] arr1 = { 2, 3, 5, 6, 4, 8, 1 }; // missing number is = 7

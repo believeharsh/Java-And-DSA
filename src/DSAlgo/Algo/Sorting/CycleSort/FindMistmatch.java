@@ -25,6 +25,7 @@ public class FindMistmatch {
                 i++;
             }
         }
+        
 
         // search for first missing number
         for (int index = 0; index < arr.length; index++) {
@@ -34,6 +35,7 @@ public class FindMistmatch {
         }
         return new int[] { -1, -1 };
     }
+
 
     static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
