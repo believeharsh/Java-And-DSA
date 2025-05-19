@@ -14,8 +14,8 @@ public class Selection {
     }
 
     public static void selectionSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1 ; i++) {
+        int n = arr.length - 1;
+        for (int i = 0; i < n ; i++) {
             int minInd = i;
             // here we are assuming the first element as a smaller one in the unsorted part of an array. 
             for (int j = i + 1; j < n; j++) {
@@ -25,9 +25,12 @@ public class Selection {
                 }
             }
             // here we are swapping the smallest element with the first element of the unsorted part . 
+            if(i != minInd) {
             int temp = arr[minInd];
             arr[minInd] = arr[i];
             arr[i] = temp;
+            }
+
 
         }
     }

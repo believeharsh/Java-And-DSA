@@ -3,5 +3,8 @@
         "src"
     ],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [],
+    "github.copilot.enable": {
+        "*": false
+    }
 }
