@@ -14,6 +14,8 @@ public class LinearSearch {
         ArrayList<Integer> result = finAllIndex(arr, 2, 0, new ArrayList<>());
         System.out.println(result); // Output: [1, 3, 5]
 
+        System.out.println(finAllIndexTwo(arr, 2, 0)) ; 
+
     }
 
     static boolean find(int[] arr, int target, int index) {
@@ -85,6 +87,19 @@ public class LinearSearch {
             list.add(index);
         }
         return finAllIndex(arr, target, index + 1, list);
+    }
+
+    static ArrayList finAllIndexTwo(int[] arr, int target, int index) {
+        ArrayList<Integer> list = new ArrayList<>() ; 
+        if (index == arr.length) {
+            return list;
+        }
+        if (arr[index] == target) {
+            list.add(index);
+        }
+        ArrayList<Integer> ansFromBelowCalls =  finAllIndexTwo(arr, target, index + 1);
+        list.addAll(ansFromBelowCalls) ; 
+        return list ; 
     }
 
 }
