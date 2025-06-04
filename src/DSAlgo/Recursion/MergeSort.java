@@ -14,6 +14,7 @@ public class MergeSort {
             return arr;
         }
 
+        
         int mid = arr.length / 2;
 
         int[] left = mergeSort(Arrays.copyOfRange(arr, 0, mid));
