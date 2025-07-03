@@ -25,6 +25,7 @@ public class Permutations {
         if (index == nums.length) {
             // Make a copy of the current permutation and add it to the answer list
             List<Integer> current = new ArrayList<>(nums.length);
+            if(current.)
             for (int n : nums) current.add(n);
             ans.add(current);
             return;
